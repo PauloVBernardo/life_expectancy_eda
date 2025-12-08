@@ -1,24 +1,49 @@
 # Análise de Expectativa de Vida
 
-## 📌 Sobre o projeto
-Este projeto realiza uma análise exploratória e limpeza de dados sobre expectativa de vida
-em diversos países utilizando um dataset público.
+Este projeto apresenta uma análise exploratória e limpeza de dados sobre expectativa de vida em diferentes países, com foco na compreensão da qualidade dos dados e dos fatores associados.
+
+---
 
 ## 🎯 Objetivo
-Investigar fatores associados à expectativa de vida e preparar os dados para futuras análises
-estatísticas e modelagem.
+Explorar o comportamento da expectativa de vida e identificar padrões, inconsistências e relações com variáveis socioeconômicas
+e de saúde pública.
 
-## 📂 O que tem neste repositório
-- notebooks/: análise exploratória e preparação dos dados
-- data/raw/: dados brutos utilizados no projeto
+---
 
-## 🛠 Tecnologias usadas
+## 📊 Principais Etapas do Projeto
+
+- Análise exploratória de dados (EDA)
+- Identificação e tratamento de valores ausentes
+- Verificação de outliers
+- Padronização de variáveis
+- Análises estatísticas descritivas
+
+---
+
+## 📂 Estrutura do Projeto
+
+life_expectancy_eda/
+│
+├── notebooks/
+│ └── Expectativa_vida.ipynb
+├── data/
+│ └── raw/
+│ └── Life Expectancy Data.csv
+├── README.md
+└── requirements.txt
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
 - Python
 - Pandas
-- Numpy
+- NumPy
 - Matplotlib
 - Seaborn
 - SciPy
 
-## ✅ Status
-Projeto concluído (fase de análise exploratória).
+---
+
+## ✅ Status do Projeto
+Finalizado - fase de análise exploratória e preparação de dados.
