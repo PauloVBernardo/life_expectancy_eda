@@ -10,7 +10,7 @@ Investigar os principais determinantes da expectativa de vida e avaliar a qualid
 
 ---
 
-## 🗂 Estrutura do Repositório
+## 🗂 Estrutura do Repositório 
 
 life_expectancy_eda/
 │
