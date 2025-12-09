@@ -12,21 +12,25 @@ Investigar os principais determinantes da expectativa de vida e avaliar a qualid
 
 ## 🗂 Estrutura do Repositório 
 
+## Estrutura do repositório
+
+```text
 life_expectancy_eda/
 │
 ├── notebooks/
-│ └── Expectativa_vida.ipynb
+│   └── Expectativa_vida.ipynb
 │
 ├── data/
-│ ├── raw/
-│ │ └── Life Expectancy Data.csv
-│ │
-│ └── processed/
-│ └── life_expectancy_final.csv
+│   ├── raw/
+│   │   └── Life Expectancy Data.csv
+│   │
+│   └── processed/
+│       └── life_expectancy_final.csv
 │
 ├── LICENSE
 ├── README.md
 └── requirements.txt
+```
 
 
 ### Descrição das Pastas
