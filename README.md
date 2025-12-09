@@ -16,12 +16,26 @@ life_expectancy_eda/
 │
 ├── notebooks/
 │ └── Expectativa_vida.ipynb
+│
 ├── data/
-│ └── raw/
-│ └── Life Expectancy Data.csv
+│ ├── raw/
+│ │ └── Life Expectancy Data.csv
+│ │
+│ └── processed/
+│ └── life_expectancy_final.csv
+│
+├── LICENSE
 ├── README.md
 └── requirements.txt
 
+
+### Descrição das Pastas
+
+- `notebooks/`: análise exploratória e tratamento dos dados.
+- `data/raw/`: dataset original.
+- `data/processed/`: base final após limpeza e validação.
+- `requirements.txt`: dependências do projeto.
+- `LICENSE`: termos de uso do projeto.
 
 ---
 
