@@ -1,4 +1,4 @@
-# 🌍 Projeto de Portfólio: Análise de Expectativa de Vida (EDA)
+# 🌍 Análise de Expectativa de Vida (EDA)
 
 [![Jupyter Notebook](https://img.shields.io/badge/Notebook-Expectativa__vida.ipynb-orange?style=flat&logo=jupyter)](./notebooks/Expectativa_vida.ipynb)
 
