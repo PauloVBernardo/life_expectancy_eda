@@ -2,7 +2,8 @@
 
 [![Jupyter Notebook](https://img.shields.io/badge/Notebook-Expectativa__vida.ipynb-orange?style=flat&logo=jupyter)](./notebooks/Expectativa_vida.ipynb)
 
-Este projeto realiza uma **Análise Exploratória de Dados (EDA)** sobre expectativa de vida em diferentes países, utilizando o dataset da **Organização Mundial da Saúde (WHO)**. O foco está em **limpeza, padronização e análise estatística**, destacando fatores demográficos, econômicos e de saúde pública que influenciam a longevidade.
+Este projeto realiza uma **Análise Exploratória de Dados (EDA)** sobre expectativa de vida em diferentes países, utilizando dados provenientes da **Organização Mundial da Saúde (WHO)** e disponibilizados no site [Kaggle](#-https://www.google.com/url?q=https%3A%2F%2Fwww.kaggle.com%2Fdatasets%2Fkumarajarshi%2Flife-expectancy-who%2Fdata). 
+O foco está em limpeza, padronização e exploração dos dados como fatores demográficos, econômicos e de saúde pública que influenciam a expectativa de vida.
 
 ---
 
@@ -21,8 +22,6 @@ Este projeto realiza uma **Análise Exploratória de Dados (EDA)** sobre expecta
 
 ## 💡 Principais Resultados e Insights da EDA
 
-O principal objetivo de um portfólio é demonstrar valor. Esta seção resume os achados analíticos cruciais obtidos após a limpeza e validação dos dados:
-
 * **Preditor Mais Forte:** A variável **`income_composition_of_resources`** (Composição da Renda) demonstrou ser o preditor mais forte para a Expectativa de Vida, com alta correlação positiva.
 * **Importância da Educação:** A variável **`schooling`** (Anos de Escolaridade) segue de perto em termos de correlação positiva, reforçando o impacto direto dos fatores educacionais na longevidade.
 * **Fatores Críticos de Saúde:** As variáveis **`adult_mortality`** e **`hiv/aids`** apresentam as correlações mais fortes e negativas, sendo as áreas críticas de saúde pública que inibem o aumento da Expectativa de Vida.
@@ -32,13 +31,13 @@ O principal objetivo de um portfólio é demonstrar valor. Esta seção resume o
 O estudo identificou:
 
 - Presença relevante de dados ausentes em variáveis-chave.
-- Disparidade significativa entre regiões.
+- Disparidade significativa entre países com dados completos e incompletos.
 - Correlação entre investimento em saúde e expectativa de vida.
-- Padrões atípicos em países com instabilidade socioeconômica.
+- Grande número de dados errados.
 
 ---
 
-## 🎯 Objetivos do Estudo
+## 🎯 Objetivos
 
 1. Avaliar a qualidade e completude do dataset.
 2. Padronizar variáveis e nomes de colunas para melhor manipulação.
@@ -69,23 +68,24 @@ Foram conduzidas as seguintes etapas:
 
 1. **Padronização de Colunas:** Renomear colunas complexas para o formato `snake_case`.
 2. **Imputação Estratégica:** Garantir um *dataset* **100% completo** (zero valores nulos) e livre de duplicatas.
-3. **Decisão Técnica:** Nulos foram imputados utilizando a **Média** (`.mean()`), técnica robusta para dados contínuos.
+3. **Decisão Técnica:** Nulos foram imputados utilizando a **Média** (`.mean()`).
 
 ---
 
 ## 🔎 Desafios Analíticos Superados
 
-A fase de limpeza e visualização exigiu decisões técnicas complexas que demonstram capacidade de resolução de problemas:
+A fase de limpeza e visualização exigiu decisões técnicas complexas para a resolução de problemas:
 
-1. **Tratamento da Série Temporal:** O *dataset* contém 16 anos de dados. Para a **Visualização Geográfica (Mapa Coroplético)**, foi necessário filtrar o DataFrame para o **último ano disponível**, fornecendo um *snapshot* geográfico relevante.
+1. **Tratamento da Série Temporal:** O *dataset* contém 16 anos de dados para cada país. 
+Para a **Visualização Geográfica (Mapa Coroplético)**, foi necessário filtrar o DataFrame para o **último ano disponível**, fornecendo um *snapshot* geográfico relevante.
 2. **Incompatibilidade de Nomes Geográficos:** A criação do mapa foi dificultada pela **incompatibilidade dos nomes de países** entre o DataFrame do projeto e o *shapefile* geográfico padrão.
     * **Solução:** O desafio foi superado através da criação e implementação de um **dicionário de mapeamento manual** para renomear e alinhar os países, e posterior filtragem dos países não representados no *shapefile*.
-
+3. **Dados problemáticos:** O *dataset* continha um grande número de dados incongruentes (fora dos limites esperados para a variável)e dados nulos. 
+Foi necessário avaliar alguns casos isolados e determinar onde seria possível aplicar uma correção e onde era necessário realizar uma exclusão.
 ---
 
-## 📊 Visualizações Principais
+## 📊 Principais Visualizações 
 
-Para tornar o README mais atrativo, insira algumas figuras geradas no *notebook*:
 
 1. Mapa coroplético da expectativa de vida por país
 ![Mapa Expectativa de Vida](./figures/mapa_expectancy.png)
@@ -150,10 +150,7 @@ life_expectancy_eda/
 │   └── top_variaveis_le.png
 ├── README.md
 └── requirements.txt
-text```
-
-
-
+```
 - notebooks/: análise exploratória e tratamento dos dados.
 
 - data/raw/: dataset original.
@@ -174,4 +171,4 @@ Esta limpeza de dados bem-sucedida estabelece a base para as próximas etapas:
 
 	* Modelagem Preditiva.
 	* Engenharia de Atributos.
-	* Criaçã de Dashboards.
+	* Criação de Dashboards.
