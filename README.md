@@ -2,7 +2,7 @@
 
 [![Jupyter Notebook](https://img.shields.io/badge/Notebook-Expectativa__vida.ipynb-orange?style=flat&logo=jupyter)](./notebooks/Expectativa_vida.ipynb)
 
-Este projeto realiza uma **Análise Exploratória de Dados (EDA)** sobre expectativa de vida em diferentes países, utilizando dados provenientes da **Organização Mundial da Saúde (WHO)** e disponibilizados no site [Kaggle](#-https://www.google.com/url?q=https%3A%2F%2Fwww.kaggle.com%2Fdatasets%2Fkumarajarshi%2Flife-expectancy-who%2Fdata). 
+Este projeto realiza uma **Análise Exploratória de Dados (EDA)** sobre expectativa de vida em diferentes países, utilizando dados provenientes da **Organização Mundial da Saúde (WHO)** e disponibilizados no site [Kaggle](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who/data). 
 O foco está em limpeza, padronização e exploração dos dados como fatores demográficos, econômicos e de saúde pública que influenciam a expectativa de vida.
 
 ---
