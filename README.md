@@ -162,8 +162,8 @@ life_expectancy_eda/
 - LICENSE: termos de uso do projeto.
 
 ## ✅ Status do Projeto e Próximos Passos
-Status
-Finalizado: fase exploratória e preparação de dados. 
+Status Finalizado: fase exploratória e preparação de dados. 
+
 Pronto para servir como base em análises preditivas futuras.
 
 ## ➡️ Próximos Passos (Continuidade do Projeto)
