@@ -19,6 +19,33 @@ O foco está em limpeza, padronização e exploração dos dados como fatores de
 9. [Status do Projeto e Próximos Passos](#-status-do-projeto-e-próximos-passos)
 
 ---
+## 🗂 Estrutura do Repositório
+
+```text
+life_expectancy_eda/
+│
+├── notebooks/
+│   └── Expectativa_vida.ipynb # Análise exploratória e tratamento dos dados
+│
+├── data/
+│   ├── raw/
+│   │   └── Life Expectancy Data.csv # Dataset original, com dados brutos
+│   │
+│   └── processed/
+│       └── life_expectancy_final.csv # Dataset com dados tratados
+│
+│── figures/ # Imagens produzidas pelas análises
+│   ├── mapa_expectancy.png # Mapa da distribuição da expectativa de vida pelo mundo
+│   │
+│   ├── heatmap_variaveis.png # Mapa de calor das correlações entre as variáveis 
+│   │
+│   └── top_variaveis_le.png # Gráfico de barras com maiores correlações de variáveis preditoras com expectativa de vida
+│
+├── LICENSE # Licença MIT
+├── README.md # Instruções e dados do projeto
+└── requirements.txt # Dependências do projeto
+```
+---
 
 ## 💡 Principais Resultados e Insights da EDA
 
@@ -45,6 +72,27 @@ O estudo identificou:
 4. Explorar correlações entre fatores socioeconômicos e expectativa de vida.
 5. Preparar uma base confiável para análises futuras e modelos preditivos.
 
+---
+## 🚀 Instruções de Instalação
+
+Para reproduzir este projeto localmente, siga os passos abaixo:
+
+```bash
+# Clone o repositório
+git clone https://github.com/PauloVBernardo/life_expectancy_eda.git
+cd life_expectancy_eda
+
+# Crie o ambiente virtual
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+# Instale dependências principais
+pip install -r requirements.txt
+
+# Abra o Notebook
+jupyter notebook notebooks/Expectativa_vida.ipynb
+```
 ---
 
 ## 🔍 Abordagem Analítica
@@ -138,29 +186,6 @@ Foi necessário avaliar alguns casos isolados e determinar onde seria possível 
 
 ---
 
-## 🗂 Estrutura do Repositório
-
-```text
-life_expectancy_eda/
-├── notebooks/
-├── data/
-├── figures/
-│   ├── mapa_expectancy.png
-│   ├── heatmap_variaveis.png
-│   └── top_variaveis_le.png
-├── README.md
-└── requirements.txt
-```
-- notebooks/: análise exploratória e tratamento dos dados.
-
-- data/raw/: dataset original.
-
-- data/processed/: base final após limpeza e validação.
-
-- requirements.txt: dependências do projeto.
-
-- LICENSE: termos de uso do projeto.
-
 ## ✅ Status do Projeto e Próximos Passos
 Status Finalizado: fase exploratória e preparação de dados. 
 
@@ -172,3 +197,8 @@ Esta limpeza de dados bem-sucedida estabelece a base para as próximas etapas:
 	* Modelagem Preditiva.
 	* Engenharia de Atributos.
 	* Criação de Dashboards.
+	
+📬 Contato
+👤 Autor: Paulo Vitor dos Santos Bernardo
+📧 Email: pauloviti@gmail.com
+🔗 LinkedIn: www.linkedin.com/in/paulo-vitor-bernardo
